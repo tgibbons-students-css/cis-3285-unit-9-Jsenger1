@@ -10,6 +10,9 @@ using SingleResponsibilityPrinciple.Contracts;
 namespace SingleResponsibilityPrinciple
 {
     class URLTradeDataProvider: ITradeDataProvider
+        
+         //Request 407
+         //This class allows data to come from a url rather than a stream  
 
     {
         public URLTradeDataProvider(string url)

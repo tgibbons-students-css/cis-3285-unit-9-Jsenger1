@@ -17,6 +17,7 @@ namespace SingleResponsibilityPrinciple
         }
         private void LogMessage(string type, string message, params object[] args)
         {
+            //Request 407 print logs to xml file
             Console.WriteLine(type + ": " + message, args);
             using (StreamWriter logfile = File.AppendText("log.xml"))
             {

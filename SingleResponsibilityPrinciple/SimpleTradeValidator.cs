@@ -32,11 +32,13 @@ namespace SingleResponsibilityPrinciple
                 logger.LogWarning("Trade not a valid integer: '{0}'", tradeData[1]);
                 return false;
             }
+            // Request 403 trade amount cant be below 1000
             if (tradeAmount<1000)
             {
                 logger.LogWarning("Trade not a valid integer: '{0}'", tradeData[1]);
                 return false;
             }
+            // Request 403 trade amount cant be above 100000 
             if (tradeAmount > 100000)
             {
                 logger.LogWarning("Trade not a valid integer: '{0}'", tradeData[1]);
